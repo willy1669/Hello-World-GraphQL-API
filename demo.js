@@ -1,4 +1,5 @@
-import gql from 'grapql-tag';
+const gql = require('graphql-tag');
+const { ApolloServer } = require('apollo-server');
 
 const typeDefs = gql`
     type User {
@@ -11,3 +12,23 @@ const typeDefs = gql`
         me: User!
     }
 `
+
+const resolvers = {
+    Query : {
+       me() {
+           return {
+               email: 'williamschinonso11@gmail.com',
+               avatar: 'http://yoda.png',
+               friends: []
+           }
+
+        }
+    }
+}
+
+const server = new ApolloServer({
+    typeDefs,
+    resolvers
+});
+
+server.listen(4000).then(() => console.log('on port 4000'))
