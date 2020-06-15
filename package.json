@@ -1,0 +1,15 @@
+{
+  "name": "helloworldgraphql",
+  "version": "1.0.0",
+  "description": "a serever test of apollo graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chinonso Williams",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.14.4",
+    "graphql-tag": "^2.10.3"
+  }
+}
