@@ -9,7 +9,7 @@
   "author": "Chinonso Williams",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.14.4",
+    "apollo-server": "^2.25.4",
     "graphql-tag": "^2.10.3"
   }
 }
